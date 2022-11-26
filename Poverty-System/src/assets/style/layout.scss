@@ -1,0 +1,72 @@
+.set-common-head-fixed-container {
+    height: 90px; // 预留菜单总高度，后期可能修改
+}
+
+.common-head-fixed-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+}
+
+.show-mobile {
+    display: flex !important;
+    justify-content: flex-start;
+    padding: 0 5px;
+    background-color: #2c3e50;
+
+    .same-cell {
+        color: #fff;
+    }
+}
+
+// 头部菜单做媒体查询，适应所有屏幕大小，自定义宽度和样式变化
+// 1、超小屏幕下，小于768px 布局容器的宽度为100%
+@media screen and (max-width:767px) {
+    .show-pc {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+        // background-color: red;
+    }
+}
+
+// 2、小屏幕下，大于等于768px 布局容器改为750px
+@media screen and (min-width: 750px) {
+    .show-pc {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+        // background-color: red;
+    }
+
+}
+
+// 3、中等屏幕下， 大于等于992px 布局容器改为970
+@media screen and (min-width:992px) {
+    .show-pc {
+        display: block;
+        // background-color: orange;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+}
+
+// 4、大屏幕下，大于等于1200px, 布局容器改为1170px
+@media screen and (min-width: 1200px) {
+    .show-pc {
+        display: block;
+        // background-color: yellow;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+}

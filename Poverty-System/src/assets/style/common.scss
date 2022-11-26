@@ -1,0 +1,119 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+// tbody,
+// tfoot,
+// thead,
+// tr,
+// th,
+// td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    // border: 0;
+    outline: 0;
+    list-style: none;
+    vertical-align: baseline;
+    // background: transparent;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.layout-sider-bar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* IE内核 */
+    -ms-scroll-chaining: chained;
+    -ms-overflow-style: none;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 500%;
+    // -ms-scroll-snap-type: proximity;
+    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #F7F7F7;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #ccc;
+}
